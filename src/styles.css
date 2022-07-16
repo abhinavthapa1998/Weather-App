@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", Arial !important;
+  background-color: #d5d4d4;
+}
+.container {
+  max-width: 1080;
+  margin: 20px auto;
+}
