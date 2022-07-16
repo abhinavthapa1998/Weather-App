@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
 import { GEO_API_URL, geoApiOptions } from "../../api";
 const Search = ({ onSearchChange }: { onSearchChange: any }) => {
@@ -32,7 +32,7 @@ const Search = ({ onSearchChange }: { onSearchChange: any }) => {
       debounceTimeout={600}
       value={search}
       onChange={handleOnChange}
-      loadOptions={loadOptions}
+      loadOptions={loadOptions(search)}
     />
   );
 };
